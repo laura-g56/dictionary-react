@@ -1,4 +1,18 @@
 .Definition h3 {
-  color: rgb(159, 122, 219);
+  color: #9bd0e4;
   font-size: 25px;
+}
+.Definition .defined {
+  margin-bottom: 30px;
+  margin-top: 0;
+  margin-left: 10px;
+  line-height: 1.6;
+}
+
+.Definition p {
+  margin-bottom: 0;
+}
+
+.Definition em {
+  opacity: 0.6;
 }
