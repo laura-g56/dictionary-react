@@ -2,7 +2,7 @@ import React from "react";
 import "./Results.css";
 import Definition from "./Definition";
 
-export default function Results (props) {
+export default function Results(props) {
   console.log(props.results);
 
   if (props.results) {
