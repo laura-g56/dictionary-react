@@ -13,8 +13,26 @@ export default function App() {
         <Dictionary />
       </main>
       <footer className="App-footer">
-        <small>Coded by Laura Gumienik</small>
-      </footer>
+        <small>
+          Coded by Laura Gumienik |{" "}
+          <a
+            className="github-ref"
+            href="https://github.com/laura-g56/dictionary-react"
+            target="_blank norefferer"
+          >
+            GitHub
+          </a>
+          {/* |{" "} */}
+          {/* <a
+            className="github-ref"
+            href="https://suspicious-meninsky-847725.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Netlify
+          </a> */}
+        </small>
+        </footer>
       </div>
     </div>
   );
