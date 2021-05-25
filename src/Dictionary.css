@@ -13,10 +13,10 @@ p {
 .search-form {
   display: block;
   margin: 0 auto;
-  padding: 30px 10px;
+  padding: 30px 10px 10px 10px;
   max-width: 675px;
   background-color: #171c2e;
   border-radius: 10px;
   border-width: 5px;
-  box-shadow: 0 4px 15px rgba(237, 220, 245, 0.1);
+  box-shadow: -1px -1px 4px 4px rgba(237, 220, 245, 0.3);
 }
