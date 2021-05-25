@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="card">
+        {/* <div className="card"> */}
         <header className="App-header">
           {/* <img src={logo} className="App-logo img-fluid" alt="logo" /> */}
           <h1> Online Dictionary</h1>
@@ -15,7 +15,7 @@ export default function App() {
           <Dictionary defaultKeyword="dictionary"/>
         </main>
           <Footer />
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );

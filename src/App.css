@@ -1,27 +1,38 @@
+body {
+  /* background-color: cadetblue; */
+  /* background-color: #171c2e; */
+  background: linear-gradient(#171c2e -4.3%, #262f4d 101.8%);
+}
+
 .App {
   font-family: "Nanum Gothic", sans-serif;
-  text-align: center;
+  text-align: left;
   text-shadow: 3px 4px 5px #001722;
+  max-width: 800px;
 }
 
 .App-header h1 {
   text-align: center;
   font-size: 50px;
   color: #ebe9e9;
-  padding: 40px;
-  margin: 0px;
+  background-color: transparent;
+  padding: 30px;
+  margin: 0px auto;
   max-width: 800px;
 }
-
-.card {
+.container {
+  padding: 0;
+  margin: 20px;
+}
+/* .card {
   display: block;
-  text-align: center;
-  background-color: #262c42;
+  text-align: left;
+  background-color: #171c2e;
   border-radius: 20px;
   border-width: 6px;
   border-color: #83b0c0;
   max-width: 800px;
-}
+} */
 /* .App-header {
   background-color: #282c34;
   min-height: 100vh;

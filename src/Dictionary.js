@@ -34,22 +34,25 @@ function search() {
 
   if(loaded) {
   return (
-  <div className="dictionary search-form">
-    <form onSubmit={handleSubmit} className="input-group mb-4 col-12">
-      <input type="search" className="form-control" placeholder="Enter a word..." onChange={handleKeywordChange}/>
-        <button
-          className="btn btn-outline-secondary"
-          type="submit"
-          id="button-addon2"
-        >
-          <i className="fas fa-search"></i> Search
-        </button>
-      </form>
+  <div className="dictionary">
+    <div className="search-form">
+      <form onSubmit={handleSubmit} className="input-group mb-1 col-12">
+        <input type="search" className="form-control" placeholder="Enter a word..." onChange={handleKeywordChange}/>
+          <button
+            className="btn btn-outline-secondary"
+            type="submit"
+            id="button-addon2"
+          >
+            <i className="fas fa-search"></i> Search
+          </button>
+        </form>
+        <small>Suggested words: sunrise, wine, holiday, gold</small>
+      </div>
     <Results results={results} />
   </div>
   )
   } else {
       load();
-      return null
+      return "Loading...";
   }
 }
