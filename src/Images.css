@@ -1,15 +1,16 @@
 h3 {
   margin-top: 10px;
+  font-size: 25px;
 }
 
 .Images {
   text-align: left;
-  color: #f3f040;
+  color: #9bd0e4;
   background: transparent;
   max-width: 675px;
   margin: 20px auto;
   padding: 20px 40px;
-  background-color: #171c2e;
+  background-color: #1f263f;
   border-radius: 10px;
   border-width: 5px;
   box-shadow: 1px 2px 4px 4px rgba(237, 220, 245, 0.3);
