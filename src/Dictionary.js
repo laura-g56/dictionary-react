@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./Dictionary.css";
 import Results from "./Results";
 import Images from "./Images";
+import Loader from "react-loader-spinner";
+import "./Dictionary.css";
 
 export default function Dictionary(props) {
 let [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -15,7 +16,7 @@ function handleResponse(response) {
 }
 
 function handlePexelsResponse(response) {
-    setPhotos(response.data.photos);
+  setPhotos(response.data.photos);
 }
 
 function search() {
@@ -30,42 +31,51 @@ function search() {
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
 }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    search();
-  }
+function handleSubmit(event) {
+  event.preventDefault();
+  search();
+}
 
-  function handleKeywordChange(event) {
+function handleKeywordChange(event) {
   setKeyword(event.target.value);
-  }
+}
 
-  function load() {
-    setLoaded(true);
-    search()
-  }
+function load() {
+  setLoaded(true);
+  search()
+}
 
-  if(loaded) {
+if(loaded) {
   return (
-  <div className="dictionary">
-    <div className="search-form">
-      <form onSubmit={handleSubmit} className="input-group mb-1 col-12">
-        <input type="search" className="form-control" placeholder="Enter a word..." onChange={handleKeywordChange}/>
-          <button
-            className="btn btn-outline-secondary"
-            type="submit"
-            id="button-addon2"
-          >
-            <i className="fas fa-search"></i> Search
-          </button>
-        </form>
-        <small>Suggested words: sunrise, wine, holiday, gold</small>
-      </div>
-    <Results results={results} />
-    <Images photos={photos} />
-  </div>
+    <div className="Dictionary">
+      <div className="search-form">
+        <form onSubmit={handleSubmit} className="input-group mb-1 col-12">
+          <input type="search" className="form-control" placeholder="Enter a word..." onChange={handleKeywordChange}/>
+            <button
+              className="btn btn-outline-secondary"
+              type="submit"
+              id="button-addon2"
+            >
+              <i className="fas fa-search"></i> Search
+            </button>
+          </form>
+          <small>Suggested words: sunrise, wine, holiday, gold</small>
+        </div>
+      <Results results={results} />
+      <Images photos={photos} />
+    </div>
   )
   } else {
       load();
-      return "Loading...";
+      return (
+      <div className="loader">
+        <Loader
+          type="ThreeDots"
+          color="#f3f040"
+          height={85}
+          width={85}
+        />
+      </div>
+    )
   }
 }

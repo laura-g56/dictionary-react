@@ -1,8 +1,5 @@
 body {
-  /* background-color: cadetblue; */
-  /* background-color: #171c2e; */
-  /* background: linear-gradient(#171c2e -4.3%, #262f4d 101.8%); */
-  background-image: url("./colour-splash.jpg");
+  background-image: url("./unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -13,32 +10,25 @@ body {
   text-align: left;
   text-shadow: 3px 4px 5px #001722;
   max-width: 800px;
+  margin: 0 auto;
 }
 
 .App-header h1 {
   text-align: center;
-  font-size: 50px;
+  font-family: "MegrimMedium";
+  font-size: 65px;
   font-weight: bold;
   color: #ebe9e9;
-  text-shadow: 3px 3px 5px #aaaaaa;
+  text-shadow: 4px 6px 5px 2px #144a5a;
   background-color: transparent;
   padding: 30px;
   margin: 0px auto;
   max-width: 800px;
 }
-.container {
+.App .container {
   padding: 0;
   margin: 20px;
 }
-/* .card {
-  display: block;
-  text-align: left;
-  background-color: #171c2e;
-  border-radius: 20px;
-  border-width: 6px;
-  border-color: #83b0c0;
-  max-width: 800px;
-} */
 /* .App-header {
   background-color: #282c34;
   min-height: 100vh;
