@@ -1,11 +1,10 @@
 import React from "react";
 import "./Footer";
-
 import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div className="App-footer">
+    <div className="Footer">
         <small>
           Coded by Laura Gumienik |{" "}
           <a

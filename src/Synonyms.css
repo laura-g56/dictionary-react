@@ -1,12 +1,13 @@
-.Synonyms,
-li {
-  display: inline-block;
+.Synonyms {
   color: #98a7e7;
-  list-style: none;
-  padding: 6px;
   font-size: 15px;
 }
-
-ul {
-  padding-left: 5px;
+.Synonyms ul {
+  padding-left: 0px;
+}
+.Synonyms li {
+  display: inline-block;
+  list-style: none;
+  font-size: 15px;
+  padding: 7px;
 }

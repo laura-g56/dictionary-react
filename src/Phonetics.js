@@ -10,8 +10,7 @@ export default function Phonetics({ phonetic }) {
   return (
     <div className="Phonetics">
       <button
-        className="btn btn-outline-dark
-"
+        className="btn btn-outline-dark"
         onClick={() => playSound(audio)}
       >
         <i className="fas fa-volume-up sound-icon"></i> {phonetic.text}

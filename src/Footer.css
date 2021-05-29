@@ -1,8 +1,14 @@
-.App-footer {
+.Footer {
   padding: 20px;
   color: white;
   text-align: center;
 }
-a {
+.Footer a {
   color: #9bd0e4;
+}
+
+.Footer a:hover {
+  color: #4f8ea5;
+  cursor: pointer;
+  text-decoration: none;
 }

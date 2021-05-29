@@ -1,16 +1,16 @@
-h2 {
+.Dictionary h2 {
   color: #f3f040;
 }
-p {
+.Dictionary p {
   color: #eeeeee;
 }
-.dictionary small {
+.Dictionary small {
   text-align: left;
   font-size: 12px;
   margin: 20px;
   color: rgb(191, 191, 192);
 }
-.search-form {
+.Dictionary .search-form {
   display: block;
   margin: 0 auto;
   padding: 30px 10px 10px 10px;
